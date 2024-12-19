@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #b4deec; /* Light blue background */
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            background-color: #1a4757;
+            color: #cac9c9;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        .profile-image {
+            position: absolute;
+            top: 1px;
+            right: 10px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid #817878;
+        }
+
+        /* Section Styling */
+        .section {
+            padding: 40px 0;
+            margin: 20px 0;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .project {
+            background-color: #67bef0;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: scale(0.9);
+            animation: fadeInUp 1s forwards, popUp 0.5s ease-in-out;
+            animation-delay: 0.2s;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+
+        .project:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        .project:nth-child(4) {
+            animation-delay: 0.8s;
+        }
+
+        .project:nth-child(5) {
+            animation-delay: 1s;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes popUp {
+            0% {
+                transform: scale(0.9);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        ul li {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <img src="image.jpg" alt="Profile Image" class="profile-image">
+    </header>
+    <div class="container">
+        <section class="section">
+            <h2>About Me</h2>
+            <p>Hello! I am a beginner in web development, passionate about learning and building web projects that make an impact. I am exploring various technologies and enhancing my skills one step at a time.</p>
+        </section>
+        <section class="section">
+            <h2>Assingment</h2>
+            <div class="project">
+                <h3>Assingment 1</h3>
+                <p><a href="https://drive.google.com/drive/folders/1Wj_sP97SCN3NF9aM9XqlcZg0ciMreo9y?usp=drive_link">Link for Assignment 1</a></p>
+            </div>
+            <div class="project">
+                <h3>Assignment 2</h3>
+                <p><a href="https://drive.google.com/drive/folders/1Wj_sP97SCN3NF9aM9XqlcZg0ciMreo9y?usp=drive_link">Link for Assignment 2</a></p>
+            </div>
+            <div class="project">
+                <h3>Assignment 3</h3>
+                <p><a href="https://drive.google.com/drive/folders/1Wj_sP97SCN3NF9aM9XqlcZg0ciMreo9y?usp=drive_link">Link for Assignment 3</a></p>
+            </div>
+            <div class="project">
+                <h3>Assignment 4</h3>
+                <p><a href="https://drive.google.com/drive/folders/1Wj_sP97SCN3NF9aM9XqlcZg0ciMreo9y?usp=drive_link">Link for Assignment 4</a></p>
+            </div>
+            <div class="project">
+                <h3>Assignment 5</h3>
+                <p><a href="https://drive.google.com/drive/folders/1Wj_sP97SCN3NF9aM9XqlcZg0ciMreo9y?usp=drive_link">Link for Assignment 5</a></p>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2024 My Portfolio</p>
+        </footer>
+    </div>
+</body>
+</html>
